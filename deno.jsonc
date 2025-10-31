@@ -1,0 +1,19 @@
+{
+  "name": "@tools/gopher",
+  "version": "1.3.0",
+  "exports": "./mod.ts",
+  "tasks": {
+    "start": "deno run --allow-read --allow-write --allow-run --allow-env fix-all-interactive.tsx"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:react@18"
+  },
+  "nodeModulesDir": "auto",
+  "imports": {
+    "react": "npm:react@18",
+    "react/": "npm:react@18/",
+    "ink": "npm:ink@4",
+    "cliffy/": "https://deno.land/x/cliffy@v1.0.0-rc.4/"
+  }
+}
